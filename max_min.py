@@ -24,7 +24,7 @@ for test_case in range(1, T + 1):
  
     mn = 1000000
     mx = 1
-    for i in range(N):
+    for i in range(1, N):
         if mx<lst[i]:
             mx=lst[i]
         if mn>lst[i]:
