@@ -31,3 +31,17 @@ for test_case in range(1, T + 1):
             mn=lst[i]
  
     print(f'#{test_case} {mx-mn}')    
+
+#############################
+
+T = int(input())
+for tc in range(1, T + 1):
+    N = int(input())
+    lst = list(map(int, input().split()))
+    for i in range(N-1, 0, -1):
+        for j in range(i):
+            if lst[j] > lst[j+1]:
+                lst[j], lst[j+1] = lst[j+1], lst[j]
+
+    a = lst[N-1] - lst[0]
+    print(f'#{tc}', a) #버블소트 사용 후 마지막 값에서 첫 값 빼줌
