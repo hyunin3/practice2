@@ -12,7 +12,7 @@ for tc in range(1, T + 1):
     for i in range(M-N+1):
         cnt = 0
         for j in range(N):
-            cnt = cnt + lst_a[i] * lst_b[i+j]
+            cnt = cnt + lst_a[j] * lst_b[i+j]
         if ans < cnt:
             ans = cnt
         
