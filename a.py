@@ -1,20 +1,12 @@
 T = int(input())
 for tc in range(1, T + 1):
-    N, M = map(int, input().split())
-    lst = list(map(int, input().split()))
-    mn = 1000000
-    mx = 0
-    for i in range(N-M+1):
-        sum = 0
-        for j in range(i, i+M):
-            sum = sum+lst[j]
-        if mx < sum:
-            mx = sum
-    for i in range(N - M + 1):
-        sum = 0
-        for j in range(i, i + M):
-            sum = sum + lst[j]
-        if mn > sum:
-            mn = sum          
+    N = int(input())
+    lst = [2,3,5,7,11]
+    cnt = [0]*5
+    for i in range(len(lst)):
+        while N % lst[i] == 0:
+            N = N / lst[i]
+            cnt[i] += 1
+
             
-    print(f'#{tc} {mx-mn}')            
+    print(f'#{tc}', *cnt)            

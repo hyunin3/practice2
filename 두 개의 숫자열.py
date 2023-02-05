@@ -10,10 +10,10 @@ for tc in range(1, T + 1):
     ans = -1000000
     
     for i in range(M-N+1):
-        cnt = 0
+        sum = 0
         for j in range(N):
-            cnt = cnt + lst_a[j] * lst_b[i+j]
-        if ans < cnt:
-            ans = cnt
+            sum = sum + lst_a[j] * lst_b[i+j]
+        if ans < sum:
+            ans = sum
         
     print(f'#{tc}', ans)    
