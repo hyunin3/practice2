@@ -12,9 +12,9 @@ def dfs(n, sum):
 
 
 T = int(input())
-for test_case in range(1, T + 1):
+for tc in range(1, T + 1):
     N, K = map(int, input().split())
     lst = list(map(int, input().split()))
     ans = 0
     dfs(0, 0)
-    print(f'#{test_case} {ans}')
+    print(f'#{tc} {ans}')
