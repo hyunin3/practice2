@@ -20,4 +20,32 @@ def pop():
     else:
         top -= 1
         return stk[top + 1] #감소시키기 전 좀 전에 내려놓은 애
-                
+
+
+
+#스택 구현하고 3개의 데이터 저장한 뒤 다시 꺼내기
+
+stk= [0]*3
+top = -1
+
+top += 1
+stk[top] = 10
+
+top += 1
+stk[top] = 20
+
+top += 1
+stk[top] = 30
+
+
+if top > -1: #꺼낼게 있을 경우에만 꺼내도록
+    top -= 1
+    stk[top + 1]
+
+if top > 1:
+    top -= 1
+    stk[top + 1]
+
+if top > -1:
+    top -= 1
+    stk[top + 1]  #역순으로 30,20,10순으로 나옴
