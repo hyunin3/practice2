@@ -2,7 +2,7 @@ T = int(input())
 for tc in range(1, T + 1):
     st = input()
     stk = []
-    for ch in st:
+    for chr in st:
         if not stk:             #비어있으면 push하고
             stk.append(chr)
 

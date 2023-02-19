@@ -7,8 +7,8 @@ for tc in range(1, T + 1):
     if len(lst_a) > len(lst_b):
         lst_a, lst_b = lst_b, lst_a
         N, M = M, N
-    ans = -1000000
     
+    ans = -1000000   
     for i in range(M-N+1):
         sum = 0
         for j in range(N):
