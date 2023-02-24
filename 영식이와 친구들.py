@@ -12,13 +12,11 @@ else:
         if s > N:
             s = s - N
             cnt[s] += 1
-
             if cnt[s] == M:
                 break
 
         else:
             cnt[s] += 1
-            ans = 0
             if cnt[s] == M:
                 break
 
