@@ -1,5 +1,5 @@
 def is_valid(i, j):
-    return 0<=i<N and 0<=j<N
+    return 0<=i<N and 0<=j<M
 
 T = int(input())
 for tc in range(1, T + 1):
