@@ -29,6 +29,8 @@ for tc in range(1, T + 1):
                 if ans2 < sm2:
                     ans2 = sm2
 
-    ans = max(ans1, ans2)
-
+    if ans1 < ans2:
+        ans = ans2
+    else:
+        ans = ans1
     print(f'#{tc} {ans}')
